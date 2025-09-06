@@ -1,0 +1,1338 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://genes-and-health.github.io/test-docs/folder-and-bucket-structure/">
+      
+      
+        <link rel="prev" href="../sandboxes-and-what-each-sandbox-can-access/">
+      
+      
+        <link rel="next" href="../what-genetic-and-health-data-is-where/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Folder and bucket structure - Genes & Health TRE Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#folder-and-bucket-structure" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Genes &amp; Health TRE Documentation" class="md-header__button md-logo" aria-label="Genes & Health TRE Documentation" data-md-component="logo">
+      
+  <img src="../images/branding/genes-and-health-logo-green.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Genes & Health TRE Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Folder and bucket structure
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/genes-and-health/test-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Genes &amp; Health TRE Documentation" class="md-nav__button md-logo" aria-label="Genes & Health TRE Documentation" data-md-component="logo">
+      
+  <img src="../images/branding/genes-and-health-logo-green.svg" alt="logo">
+
+    </a>
+    Genes & Health TRE Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/genes-and-health/test-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-update-this-documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to update this documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-as-a-new-user/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting started as a new user
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../latest-tre-data-updates-and-changes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Latest TRE data updates and changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-is-a-tre-%3F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is a TRE ?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sandboxes-and-what-each-sandbox-can-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sandboxes and what each sandbox can access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Folder and bucket structure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Folder and bucket structure
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#library-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      library-red
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-gh-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding G&amp;H Buckets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding G&amp;H Buckets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gh-and-google-cloud-storage-gcs-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      G&amp;H and Google Cloud Storage (GCS) Buckets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcs-buckets-and-directories" class="md-nav__link">
+    <span class="md-ellipsis">
+      GCS Buckets and Directories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gh-gcs-bucket-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      G&amp;H GCS Bucket URLs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copying-data-to-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copying data to red
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consortiumpriorityperiod-library-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      consortiumpriorityperiod-library-red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#green-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Green folders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Green folders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#green" class="md-nav__link">
+    <span class="md-ellipsis">
+      green
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consortiumpriorityperiod-library-green" class="md-nav__link">
+    <span class="md-ellipsis">
+      consortiumpriorityperiod-library-green
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other folders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other folders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared" class="md-nav__link">
+    <span class="md-ellipsis">
+      shared
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      pipelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-datasets-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public datasets bucket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copying-between-google-buckets-within-the-tre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copying between Google Buckets within the TRE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared folders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sandbox-specific-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sandbox-specific folders
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-genetic-and-health-data-is-where/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What genetic and health data is where
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software%2C-modules%2C-requesting-installs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software, modules, requesting installs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use-docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to use docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-write-hash-symbols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to write hash symbols
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting data in and out of the TRE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Getting data in and out of the TRE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-data-in-and-out-of-the-TRE/how-to-get-your-data-in/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to get your data in
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-data-in-and-out-of-the-TRE/requesting-data-out-of-the-TRE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requesting data out of the TRE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explainers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Explainers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-manager-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module Manager User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-get-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to get Help
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#library-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      library-red
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-gh-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding G&amp;H Buckets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding G&amp;H Buckets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gh-and-google-cloud-storage-gcs-buckets" class="md-nav__link">
+    <span class="md-ellipsis">
+      G&amp;H and Google Cloud Storage (GCS) Buckets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcs-buckets-and-directories" class="md-nav__link">
+    <span class="md-ellipsis">
+      GCS Buckets and Directories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gh-gcs-bucket-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      G&amp;H GCS Bucket URLs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copying-data-to-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copying data to red
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consortiumpriorityperiod-library-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      consortiumpriorityperiod-library-red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#green-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Green folders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Green folders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#green" class="md-nav__link">
+    <span class="md-ellipsis">
+      green
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consortiumpriorityperiod-library-green" class="md-nav__link">
+    <span class="md-ellipsis">
+      consortiumpriorityperiod-library-green
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other folders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other folders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared" class="md-nav__link">
+    <span class="md-ellipsis">
+      shared
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      pipelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-datasets-bucket" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public datasets bucket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copying-between-google-buckets-within-the-tre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copying between Google Buckets within the TRE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shared folders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sandbox-specific-folders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sandbox-specific folders
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/genes-and-health/test-docs/edit/main/docs/folder-and-bucket-structure.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="folder-and-bucket-structure">Folder and bucket structure<a class="headerlink" href="#folder-and-bucket-structure" title="Permanent link">&para;</a></h1>
+<p>Folders are suffixed with red or green to indicate the type of data that is stored there. Red is for potentially sensitive data that should not be shared outside. Green is for data that can be shared with the outside world. When you log into your sandboxes, you will have a number of folders available for you. To get started, we will concentrate on the <strong>library-red</strong>, <strong>red</strong>, and <strong>home</strong> folders.</p>
+<p>This <a href="#folder-structures">reference page</a> goes through the other folders and explains what they are for and how they should be used. The following is a high-level overview of the directories in the TRE:  </p>
+<p><img alt="" src="../images/sandboxes-and-folder-structures/sandbox-diagram.png" /></p>
+<h2 id="library-red">library-red<a class="headerlink" href="#library-red" title="Permanent link">&para;</a></h2>
+<p>Available at <strong>library-red</strong> in your sandbox, this is a read-only folder that is shared between all users. It contains the data you need for your analyses. <strong>library-red</strong> is slower storage of large capacity (&gt;8 PiB as of February). For large files, the entire file must be read and cached first by gcsfuse; direct file seeking to a specific part of the file is not possible.For high-performance or large files, it may be better to make a copy to <strong>red</strong> or <strong>home/ivm</strong>. <strong>library-red</strong> corresponds to the Google Storage bucket <strong>gs://qmul-sandbox-production-library-red/</strong> (read-write access only for admins). <strong>library-red</strong> stores curated and raw data necessary for your analysis. This is where you will find the data you need to run your analysis. It includes several subfolders, each designated for specific data types and purposes. If you find a folder without a readme file, please contact the Genes and Health team for more information on its intended use.</p>
+<h2 id="red">Red<a class="headerlink" href="#red" title="Permanent link">&para;</a></h2>
+<p>In this section we explain what G&amp;H buckets are and the 3 methods for managing data on the G&amp;H TRE’s red bucket. The three ways to manipulate folders and files in the red bucket are:</p>
+<ol>
+<li>using the “Upload to red bucket” option in the File Manager,  </li>
+<li>using the gcloud command line interface,  </li>
+<li>mounting your red folder into your virtual machine.</li>
+</ol>
+<h3 id="understanding-gh-buckets">Understanding G&amp;H Buckets<a class="headerlink" href="#understanding-gh-buckets" title="Permanent link">&para;</a></h3>
+<h4 id="gh-and-google-cloud-storage-gcs-buckets"><strong>G&amp;H and Google Cloud Storage (GCS) Buckets</strong><a class="headerlink" href="#gh-and-google-cloud-storage-gcs-buckets" title="Permanent link">&para;</a></h4>
+<p>Genes &amp; Health TRE data are stored in Google Cloud Storage (GCS) buckets (on a server located in London, UK). Buckets are the basic data container for GCS and everything stored in GCS must be contained in a bucket. Each of the usual G&amp;H TRE top level storage domains are separate GCS buckets, for example, library-red, red, green and exomes-library-red. The red bucket is for TRE users to store scripts and data safely (with versioning back-up) and to permit the sharing of these between project collaborators. Files in a G&amp;H TRE bucket are just that. The bucket contains a collection of files.</p>
+<h4 id="gcs-buckets-and-directories"><strong>GCS Buckets and Directories</strong><a class="headerlink" href="#gcs-buckets-and-directories" title="Permanent link">&para;</a></h4>
+<p>The concept of a physical directory does not rightly exist in GCS. Rather, directories are “simulated” by GCS from the files name. This can be illustrated as follows:  </p>
+<p><img alt="" src="../images/sandboxes-and-folder-structures/bucket-structure.png" /></p>
+<p>In the image above, the filenames are “A/Obj1.txt”, “A/Obj2.txt”, “B/Obj3.txt”, “B/D/Obj3.txt” and “B/D/Obj4.txt” and the files simply exists a files in the bucket with those filenames. Bucket folders ‘A/’ and ‘B/’ and the sub-folder ‘D/’ are simulated. This means that is you were to delete “A/Obj1.txt” and “A/Obj2.txt”, the simulated folder “A/” would disappear (there would no longer be filenames justifying its existence). However, if you were to delete file “B/Obj3.txt”, both simulated folder ‘B/’ and sub-folder ‘D/’ would remains as they would be accounted for by filenames “B/D/Obj3.txt” and “B/D/Obj4.txt”. In the rest of this guide, when we refer to (GCS) directories, we refer to such simulated directories.</p>
+<h4 id="gh-gcs-bucket-urls"><strong>G&amp;H GCS Bucket URLs</strong><a class="headerlink" href="#gh-gcs-bucket-urls" title="Permanent link">&para;</a></h4>
+<p>On the TRE, /red/ “lives” on the file system (/genesandhealth/red/) as shown below:<br />
+<img alt="" src="../images/sandboxes-and-folder-structures/file-manager-red.png" /></p>
+<p>Physically though, as the /red/ bucket is stored on a Google Cloud file server, it has a Uniform Resource Locator (URL). The URL will depend on the sandbox you use.<br />
+For sandbox-1, the URL is gs://qmul-production-sandbox-1-red/ and, predictably, you need to change the number in the URL to match your sandbox number. When moving things to and from the red bucket using either gcloud (Option 2) or file mounting (Option 3), you will need to use the URL.</p>
+<h3 id="copying-data-to-red">Copying data to red<a class="headerlink" href="#copying-data-to-red" title="Permanent link">&para;</a></h3>
+<p>Once you have located the file/folder you want to copy into red, right click on that object and select “Upload to red bucket”:</p>
+<p><img alt="" src="../images/sandboxes-and-folder-structures/upload-to-red-bucket-contextual-menu.png" /></p>
+<p>A new window will then pop-up allowing you to select where in red you want this data to go (“red” is the top directory in red so it’s recommended you navigate to a personal or project red directory before selecting “OK”):  </p>
+<p><img alt="" src="../images/sandboxes-and-folder-structures/select-or-create-folder.png" /></p>
+<ul>
+<li>
+<p>You can use the “Browse” button to find and select existing directories in red.</p>
+</li>
+<li>
+<p>If you select the “Create New Folder” button, it will prompt you for a name, and then create a new folder in the location currently selected.</p>
+</li>
+<li>
+<p>Selecting “OK” will begin the copying process into the directory chosen and you will see a new window documenting the outcome, for example:   </p>
+</li>
+</ul>
+<p><img alt="" src="images/sandboxes-and-folder-structures/upload-to-red-bucket-progress-bar.png" /></p>
+<h2 id="folder-structures">Folder structures<a class="headerlink" href="#folder-structures" title="Permanent link">&para;</a></h2>
+<h3 id="consortiumpriorityperiod-library-red">consortiumpriorityperiod-library-red<a class="headerlink" href="#consortiumpriorityperiod-library-red" title="Permanent link">&para;</a></h3>
+<p>This bucket is only available to the core Genes &amp; Health team, and to companies in the Genes &amp; Health Industry Consortium. It contains data restricted during 9 month priority access periods (e.g. exome sequencing). Specifically, read access is only for sandboxes 1 3 4 5 6 7 9 10 13.</p>
+<p>Same storage type as <strong>/genesandhealth/library-red</strong>, see comments above</p>
+<p><strong>/genesandhealth/consortiumpriorityperiod-library-red</strong> is a google storage bucket <strong>gs://qmul-sandbox-production-library-consortiumpriorityperiod-red</strong> (read+write only for admins)</p>
+<h3 id="green-folders">Green folders<a class="headerlink" href="#green-folders" title="Permanent link">&para;</a></h3>
+<h4 id="green"><strong>green</strong><a class="headerlink" href="#green" title="Permanent link">&para;</a></h4>
+<p>Specific to each sandbox.</p>
+<p>green can be read by other users in the sandbox. Users cannot write to green.</p>
+<p>Users can download from <strong>/genesandhealth/green</strong> from internet/external systems.</p>
+<p>The admin team will review data out requests, and either place the data in green (for specific users to download, short term) or <strong>library-green</strong> (long term availability for all users to download).</p>
+<p><strong>Data in each sandbox green will be deleted approx 1 week after creation. green is not intended for long term storage, only data transfer/download.</strong></p>
+<p>Same storage type as <strong>/genesandhealth/library-red</strong>, see comments above.</p>
+<p><strong>/genesandhealth/green</strong> is a google bucket <strong>gs://fg-qmul-production-sandbox-1_green/</strong> (read only for users, read+write only for admins) (replace the 1 with whichever sandbox you want)</p>
+<h4 id="consortiumpriorityperiod-library-green"><strong>consortiumpriorityperiod-library-green</strong><a class="headerlink" href="#consortiumpriorityperiod-library-green" title="Permanent link">&para;</a></h4>
+<p>Access as for <strong>consortiumpriorityperiod-library-red</strong> but with external download (e.g. gsutil) enabled. Used for results. Not for individual level data.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gs://qmul-sandbox-production-library-consortiumpriorityperiod-green
+</span></code></pre></div>
+<h3 id="other-folders">Other folders<a class="headerlink" href="#other-folders" title="Permanent link">&para;</a></h3>
+<h4 id="shared"><strong>shared</strong><a class="headerlink" href="#shared" title="Permanent link">&para;</a></h4>
+<p>You can 'publish' a file to /genesandhealth/shared by right clicking on it, and selected 'Share with all users'</p>
+<p>/genesandhealth/shared is available to all other users within the TRE.</p>
+<h4 id="pipelines"><strong>pipelines</strong><a class="headerlink" href="#pipelines" title="Permanent link">&para;</a></h4>
+<p>This is the output of the high performance compute WDL Pipelines, that the ivm/pipeline writes to. Users of the sandbox have read only access.</p>
+<p>Specific to each sandbox.</p>
+<p>This is slower storage of large capacity (&gt;8 PiB @ Feb 2022)</p>
+<h4 id="public-datasets-bucket"><strong>Public datasets bucket</strong><a class="headerlink" href="#public-datasets-bucket" title="Permanent link">&para;</a></h4>
+<p>We also maintain a bucket for public datasets. This is not visible from within the TRE. Much of the data is mirrored in genesandhealth/library-green/ within the TRE.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gs://genesandhealth\_publicdatasets/
+</span></code></pre></div>
+<h3 id="copying-between-google-buckets-within-the-tre">Copying between Google Buckets within the TRE<a class="headerlink" href="#copying-between-google-buckets-within-the-tre" title="Permanent link">&para;</a></h3>
+<p>Is permitted from within the TRE, subject to user read/write permissions as above.</p>
+<p>Admins may copy from Google Buckets to external systems. However external copy from external Google Buckets direct to/from TRE Google Buckets is prohibited for security reasons.</p>
+<h3 id="backups">Backups<a class="headerlink" href="#backups" title="Permanent link">&para;</a></h3>
+<p>Data in selected folders is protected from accidental deletion or alteration by the Google Object Versioning service. Specifically, for data in these folders -</p>
+<h4 id="shared-folders"><strong>Shared folders</strong><a class="headerlink" href="#shared-folders" title="Permanent link">&para;</a></h4>
+<p>/genesandhealth/library-red , 1 version, 30 days</p>
+<p>/genesandhealth/consortiumpriorityperiod-library-red, 1 version, 30 days</p>
+<p>/genesandhealth/nhsdigital-sublicence-red, 1 version, 30 days</p>
+<h4 id="sandbox-specific-folders"><strong>Sandbox-specific folders</strong><a class="headerlink" href="#sandbox-specific-folders" title="Permanent link">&para;</a></h4>
+<p>/genesandhealth/red, 2 versions, 30 days</p>
+<p>/genesandhealth/pipeline, 1 version, 7 days</p>
+<p>We will keep either a) the prior version of the data prior to a change (or deletion) by a user for 30 days , or b) two prior versions of the data prior to a change (or deletion) by a user for 30 days.</p>
+<p>This allows the prior version to be restored, in the event of accidental erasure or deletion.</p>
+<p>To say this another way: imagine you accidentally alter or delete a file in the /genesandhealth/library-red folder. Then the version of the file prior to its removal can be restored, for up to 30 days after the change. In the sandbox-specific /genesandhealth/red folder, two prior versions of the file will be kept, each for 30 days after the change leading to its creation.</p>
+<p>Restoring a prior version of an accidentally removed or modified file requires utilities only available to administrators: if you need this, contact us using Slack or writing to hgi@sanger.ac.uk, including the word "Urgent" in the subject header.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../sandboxes-and-what-each-sandbox-can-access/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sandboxes and what each sandbox can access">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Sandboxes and what each sandbox can access
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../what-genetic-and-health-data-is-where/" class="md-footer__link md-footer__link--next" aria-label="Next: What genetic and health data is where">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                What genetic and health data is where
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "navigation.footer", "navigation.path", "navigation.expand", "navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
